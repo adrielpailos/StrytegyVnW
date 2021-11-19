@@ -10,7 +10,7 @@ module.exports = {
       options: {
         typeName: "alldata",
         fieldName: "alldata",
-        url: "https://api-us-east-1.graphcms.com/v2/cku8rn0m642yc01yz16vd5076/master",
+        url: "https://api-us-east-1.graphcms.com/v2/ckw2eo0rd5lur01z732m85thm/master",
       },
     }
   ],
