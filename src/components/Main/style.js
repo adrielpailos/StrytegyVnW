@@ -4,6 +4,7 @@ export  const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
     padding-top: 3rem;
+    border:solid red 3px;
 `
 
 export const Wrapper = styled.div`
@@ -11,17 +12,20 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     height: 40vh;
+    border:solid red 3px;
 `
 
 export const Title = styled.h1`
     width: 360px;
     color: rgb(34, 37, 75);
+    border:solid red 3px;
 `
 
 export const Paragraph = styled.p`
     width: 380px;
     color: rgb(34, 37, 75);
     opacity: 0.9;
+    border:solid red 3px;
 `
 
 export const BtnStart = styled.button`
@@ -30,6 +34,7 @@ export const BtnStart = styled.button`
     border: 0;
     cursor: pointer;
     font-weight: bold;
+    border:solid red 3px;
 `
 
 export const BottomTitle = styled.h2`

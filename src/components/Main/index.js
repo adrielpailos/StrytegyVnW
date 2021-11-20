@@ -2,36 +2,58 @@ import React from 'react'
 import * as S from './style'
 
 export function Main({
-    title,
-    paragraph,
-    btnstart,
-    image,
-    bottomtitle,
-    bottomparagraph,
-    imagemain,
-    imgmain
+  gif,
+  giftitle,
+  gifparagraph,
+  divimg,
+  divtitle,
+  divparagraph,
+  titlefor,
+  forparagraph,
+  datatitle,
+  security,
+  dataparagraph01,
+  dataparagraph02,
+  dataparagraph03,
+  titleusers,
+  paragraphusers,
+  userpic,
+  username,
+  userjob,
+  cardimg01,
+  cardimg02,
+  cardimg03,
+  cardfeed,
+  cardconcept,
+  cardnext,
+  cardlogo,
+  strytegy,
+  date01,
+  date02,
+  date03,
+  btnsee
 }) {
     return (
         <>
             <S.Container>
 
                 <S.Wrapper>
-                    <S.Title>{title}</S.Title>
-                    <S.Paragraph>{paragraph}</S.Paragraph>
-                    <S.BtnStart>{btnstart}</S.BtnStart>
+                    <S.Title>{}</S.Title>
+                    <S.Paragraph>{}</S.Paragraph>
+                    <S.BtnStart>{}</S.BtnStart>
                 </S.Wrapper>
 
-                <img style={{ width: "350px" }} src={image} alt="figure header" />
+                <img style={{ width: "350px" }} src={gif} alt="figure header" />
             </S.Container>
 
             <S.BottomWrapper>
-                <S.BottomTitle>{bottomtitle}</S.BottomTitle>
-                <S.BottomParagraph>{bottomparagraph}</S.BottomParagraph>
+                <S.BottomTitle>{}</S.BottomTitle>
+                <S.BottomParagraph>{}</S.BottomParagraph>
             </S.BottomWrapper>
 
             <S.BoxGif>
                 <figure>
-                    <S.ImageMain src={imagemain} alt="" />
+                    <S.ImageMain src alt="" />
                 </figure>
                 <div>
                     <S.TitleGif>Realtime and Collaborative</S.TitleGif>
@@ -41,7 +63,7 @@ export function Main({
 
             <S.BoxImgMain>
                 <figure>
-                    <S.ImageMain src={imgmain} alt="" />
+                    <S.ImageMain src alt="" />
                 </figure>
                 <div>
                     <S.TitleImgMain>Uncomplicated, intuitive, friendly</S.TitleImgMain>

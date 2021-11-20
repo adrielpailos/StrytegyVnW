@@ -50,6 +50,14 @@ export const Hubtop = styled.div`
     height:70%;
     display:flex;
     margin-left:4rem;
+    figure{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    img{
+        width:95%;
+    }
     div{
         margin-left:3rem;
         display:flex;

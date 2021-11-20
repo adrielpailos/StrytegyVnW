@@ -32,7 +32,9 @@ export function Header({
             <p>{subtitle}</p>
             <button>{start}</button>
           </div>
-          <img src={strytegyimg} alt=""/>
+          <figure>
+            <img src={strytegyimg} alt=""/>
+          </figure>
         </S.Hubtop>
         <S.HubBottom>
           <h2>{divtitle}</h2>
