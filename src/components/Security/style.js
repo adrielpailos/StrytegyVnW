@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Title = styled.h2 `
-    margin-bottom: 1rem;
+    height:10rem;
+    display:flex;
+    align-items:center;
+ 
     color: rgb(34, 37, 75);
     font: 500 3.4375rem Paralucent, sans-serif;
 `;
@@ -21,23 +24,36 @@ export const Container = styled.div `
 `;
 
 export const ImageBox = styled.div `
-    width: 70%;
-    margin: 3rem 0p;
+    width:70%;
 `;
 
 export const Image = styled.img `
-width: 70%;
+    width: 100%;
     margin: 3rem 0p;
 `;
 
-export const List = styled.ul `
-    margin-top: 2rem;
-    `;
+export const List = styled.nav `
+    height:30rem;
+    display:flex;
+    align-items:center;
+    ul{
+        height:70%;
+        display:flex;
+        justify-content:space-around;
+        flex-direction:column;
+        align-items:center;
+    }
+`;
 
 export const Item = styled.li `
     font: 300 1.375rem / 1.875rem Soleto, sans-serif;
-    padding: 0.875rem;
     color: rgb(34, 37, 75);
     text-align: center;
+    &:nth-child(1){
+        width:80%;
+    }
+    &:nth-child(3){
+        width:80%;
+    }
 }
 `;

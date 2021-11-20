@@ -15,7 +15,7 @@ export function Header({
   divparagraph
 }) {
   return (
-    <div>
+    <S.Container>
       <S.NavHeader>
         <S.ImageLogo src={logo} alt="Strytegy" />
         <div>
@@ -41,6 +41,6 @@ export function Header({
           <p>{divparagraph}</p>
         </S.HubBottom>
       </S.HeaderHub>
-    </div>
+    </S.Container>
   )
 }

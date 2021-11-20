@@ -53,7 +53,7 @@ export const query = graphql`
           foryouparagraph
           istiparagraph
           maindivimg {
-            width
+            url
           }
           maindivparagraph
           maindivtitle
@@ -94,56 +94,57 @@ export default function Index({ data }) {
 
   const dataMain = data.alldata.projects[0]
 
-    return (
-        <div>
-            <GlobalStyle/>
-            {console.log("to aqui:", data)}
-            <Header
-              logo={dataMain.navlogoimg.url}
-              blog={dataMain.btnblog}
-              faq={dataMain.btnfaq}
-              enter={dataMain.btnenter}
-              lang={dataMain.btnlang}
-              title={dataMain.title}
-              subtitle={dataMain.subtitle}
-              start={dataMain.btnstartnow}
-              strytegyimg={dataMain.strytegyimg.url}
-              divtitle={dataMain.divtitle}
-              divparagraph={dataMain.divparagraph}
-            />
-            <Main
-              gif={dataMain.maingifimg.url}
-              giftitle={dataMain.maingiftitle}
-              gifparagraph={dataMain.maingifparagraph}
-              divimg={dataMain.maindivimg.url}
-              divtitle={dataMain.maindivtitle}
-              divparagraph={dataMain.maindivparagraph}
-              titlefor={dataMain.titleforyou}
-              forparagraph={dataMain.foryouparagraph}
-              datatitle={dataMain.titledatasafe}
-              security={dataMain.securitypic.url}
-              dataparagraph01={dataMain.dataparagraph01}
-              dataparagraph02={dataMain.dataparagraph02}
-              dataparagraph03={dataMain.dataparagraph03}
-              titleusers={dataMain.titleusers}
-              paragraphusers={dataMain.usersparagraph}
-              userpic={dataMain.userpic.url}
-              username={dataMain.username}
-              userjob={dataMain.userjob}
-              cardimg01={dataMain.cardimg01}
-              cardimg02={dataMain.cardimg02}
-              cardimg03={dataMain.cardimg03}
-              cardfeed={dataMain.cardfeedback}
-              cardconcept={dataMain.cardconcept}
-              cardnext={dataMain.cardnextlevel}
-              cardlogo={dataMain.cardlogoimg.url}
-              strytegy={dataMain.strytegycard}
-              date01={dataMain.carddate01}
-              date02={dataMain.carddate2}
-              date03={dataMain.carddate03}
-              btnsee={dataMain.btnseemore}
-            />
-            <Security/>
-        </div>
-    )
+  return (
+    <div>
+      <GlobalStyle/>
+              {console.log("to aqui:", data)}
+      <Header
+        logo={dataMain.navlogoimg.url}
+        blog={dataMain.btnblog}
+        faq={dataMain.btnfaq}
+        enter={dataMain.btnenter}
+        lang={dataMain.btnlang}
+        title={dataMain.title}
+        subtitle={dataMain.subtitle}
+        start={dataMain.btnstartnow}
+        strytegyimg={dataMain.strytegyimg.url}
+        divtitle={dataMain.divtitle}
+        divparagraph={dataMain.divparagraph}
+      />
+      <Main
+        gif={dataMain.maingifimg.url}
+        giftitle={dataMain.maingiftittle}
+        gifparagraph={dataMain.maingifparagraph}
+        divimg={dataMain.maindivimg.url}
+        divtitle={dataMain.maindivtitle}
+        divparagraph={dataMain.maindivparagraph}
+        titlefor={dataMain.titleforyou}
+        forparagraph={dataMain.foryouparagraph}
+      />
+      <Security
+        datatitle={dataMain.titledatasafe}
+        security={dataMain.securitypic.url}
+        dataparagraph01={dataMain.dataparagraph01}
+        dataparagraph02={dataMain.dataparagraph02}
+        dataparagraph03={dataMain.dataparagraph03}
+        titleusers={dataMain.titleusers}
+        paragraphusers={dataMain.usersparagraph}
+        userpic={dataMain.userpic.url}
+        username={dataMain.username}
+        userjob={dataMain.userjob}
+        cardimg01={dataMain.cardimg01}
+        cardimg02={dataMain.cardimg02}
+        cardimg03={dataMain.cardimg03}
+        cardfeed={dataMain.cardfeedback}
+        cardconcept={dataMain.cardconcept}
+        cardnext={dataMain.cardnextlevel}
+        cardlogo={dataMain.cardlogoimg.url}
+        strytegy={dataMain.strytegycard}
+        date01={dataMain.carddate01}
+        date02={dataMain.carddate2}
+        date03={dataMain.carddate03}
+        btnsee={dataMain.btnseemore}
+      />
+    </div>
+  )
 }
