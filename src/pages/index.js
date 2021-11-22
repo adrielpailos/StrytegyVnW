@@ -4,88 +4,91 @@ import { graphql } from 'gatsby'
 import { Header } from '../components/Header'
 import { Main } from '../components/Main'
 import Security from '../components/Security'
+import Users from '../components/Users'
+import AddDates from '../components/AddDates'
 import GlobalStyle from "../components/global/globalstyles"
 
 export const query = graphql`
   query {
-      alldata {
-        projects {
-          aboutusparagraph
-          btnblog
-          btnenter
-          btnface
-          btnfaq
-          btninstagram
-          btnlang
-          btnlinkedin
-          btnprivacy
-          btnseemore
-          btnstartfree
-          btnstartnow
-          btnsupport
-          btnterms
-          card01Img {
-            url
-          }
-          card02Img {
-            url
-          }
-          card03Img {
-            url
-          }
-          cardconcept
-          carddate01
-          carddate02
-          carddate03
-          cardfeedback
-          cardlogoimg {
-            url
-          }
-          cardnextlevel
-          copyright
-          dataparagraph01
-          dataparagraph02
-          dataparagraph03
-          divparagraph
-          divtitle
-          footerparagraph
-          footertittle
-          foryouparagraph
-          istiparagraph
-          maindivimg {
-            url
-          }
-          maindivparagraph
-          maindivtitle
-          maingifimg {
-            url
-          }
-          maingifparagraph
-          maingiftittle
-          navlogoimg {
-            url
-          }
-          securitypic{
-            url
-          }
-          strytegycard
-          strytegyimg {
-            url
-          }
-          subtitle
-          title
-          titleaboutus
-          titledatasafe
-          titleforyou
-          titlehelp
-          titlesocial
-          titleusers
-          userjob
-          username
-          userpic {
-            url
-          }
+    alldata {
+      projects {
+        aboutusparagraph
+        btnblog
+        btnenter
+        btnface
+        btnfaq
+        btninstagram
+        btnlang
+        btnlinkedin
+        btnprivacy
+        btnseemore
+        btnstartfree
+        btnstartnow
+        btnsupport
+        btnterms
+        card01Img {
+          url
         }
+        card02Img {
+          url
+        }
+        card03Img {
+          url
+        }
+        cardconcept
+        carddate01
+        carddate02
+        carddate03
+        cardfeedback
+        cardlogoimg {
+          url
+        }
+        cardnextlevel
+        copyright
+        dataparagraph01
+        dataparagraph02
+        dataparagraph03
+        divparagraph
+        divtitle
+        footerparagraph
+        footertittle
+        foryouparagraph
+        istiparagraph
+        maindivimg {
+          url
+        }
+        maindivparagraph
+        maindivtitle
+        maingifimg {
+          url
+        }
+        maingifparagraph
+        maingiftittle
+        navlogoimg {
+          url
+        }
+        securitypic{
+          url
+        }
+        strytegycard
+        strytegyimg {
+          url
+        }
+        subtitle
+        title
+        titleaboutus
+        titledatasafe
+        titleforyou
+        titlehelp
+        titlesocial
+        titleusers
+        userjob
+        username
+        usersparagraph
+        userpic {
+          url
+        }
+      }
     }
   }
 `
@@ -97,7 +100,7 @@ export default function Index({ data }) {
   return (
     <div>
       <GlobalStyle/>
-              {console.log("to aqui:", data)}
+          {console.log("to aqui:", data)}
       <Header
         logo={dataMain.navlogoimg.url}
         blog={dataMain.btnblog}
@@ -127,14 +130,18 @@ export default function Index({ data }) {
         dataparagraph01={dataMain.dataparagraph01}
         dataparagraph02={dataMain.dataparagraph02}
         dataparagraph03={dataMain.dataparagraph03}
+      />
+      <Users
         titleusers={dataMain.titleusers}
         paragraphusers={dataMain.usersparagraph}
         userpic={dataMain.userpic.url}
         username={dataMain.username}
         userjob={dataMain.userjob}
-        cardimg01={dataMain.cardimg01}
-        cardimg02={dataMain.cardimg02}
-        cardimg03={dataMain.cardimg03}
+      />
+      <AddDates
+        cardimg01={dataMain.card01Img.url}
+        cardimg02={dataMain.card02Img.url}
+        cardimg03={dataMain.card03Img.url}
         cardfeed={dataMain.cardfeedback}
         cardconcept={dataMain.cardconcept}
         cardnext={dataMain.cardnextlevel}

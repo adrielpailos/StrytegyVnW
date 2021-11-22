@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export  const Container = styled.div`
-color:  rgb(34, 37, 75.1);
+    color:  rgb(34, 37, 75.1);
 `
 export const GifDiv = styled.section`
     height:25rem;

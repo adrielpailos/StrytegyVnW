@@ -6,24 +6,7 @@ const Security = ({
   security,
   dataparagraph01,
   dataparagraph02,
-  dataparagraph03,
-  titleusers,
-  paragraphusers,
-  userpic,
-  username,
-  userjob,
-  cardimg01,
-  cardimg02,
-  cardimg03,
-  cardfeed,
-  cardconcept,
-  cardnext,
-  cardlogo,
-  strytegy,
-  date01,
-  date02,
-  date03,
-  btnsee
+  dataparagraph03
 }) => {
 
   return (
