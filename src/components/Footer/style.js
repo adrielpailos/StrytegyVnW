@@ -42,7 +42,6 @@ export const FooterHub = styled.div`
     align-items:center;
     justify-content:center;
     height:30rem;
-    border:solid red;
     span{
         padding:1rem;
         border-top:solid 1px rgba(30,30,30,0.1);
