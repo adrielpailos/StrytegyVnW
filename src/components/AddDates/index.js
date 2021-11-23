@@ -71,6 +71,7 @@ const Users = ({
           </S.CardDate>
         </S.Card>
       </S.Wrap>
+      <button>{btnsee}</button>
     </S.Container>
   )
 }

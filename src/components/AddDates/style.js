@@ -1,14 +1,25 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-    height:35rem;
+    height:40rem;
     display:flex;
     align-items:center;
     flex-direction:column;
     justify-content:center;
-    border:solid;
+
+    button{
+        font: 300 1.25rem / 1.25rem Soleto, sans-serif;  
+        margin:1rem;
+        background: gold;
+        width: 12rem;
+        border-radius:5px;
+        height:3rem;
+        border:none;
+    }
 `;
 export const Wrap = styled.div`
+    border-top:solid 1px black;
+    margin:1rem;
     display:flex;
     width:90vw;
     height:33rem;

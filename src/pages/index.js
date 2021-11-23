@@ -6,6 +6,7 @@ import { Main } from '../components/Main'
 import Security from '../components/Security'
 import Users from '../components/Users'
 import AddDates from '../components/AddDates'
+import { Footer } from '../components/Footer'
 import GlobalStyle from "../components/global/globalstyles"
 
 export const query = graphql`
@@ -50,6 +51,7 @@ export const query = graphql`
         dataparagraph03
         divparagraph
         divtitle
+        
         footerparagraph
         footertittle
         foryouparagraph
@@ -148,9 +150,29 @@ export default function Index({ data }) {
         cardlogo={dataMain.cardlogoimg.url}
         strytegy={dataMain.strytegycard}
         date01={dataMain.carddate01}
-        date02={dataMain.carddate2}
+        date02={dataMain.carddate02}
         date03={dataMain.carddate03}
         btnsee={dataMain.btnseemore}
+      />
+      <Footer
+        colab={dataMain.footertittle}
+        colabparagraph={dataMain.footerparagraph}
+        startfree={dataMain.btnstartfree}
+        titleabout={dataMain.titleaboutus}
+        paragraphabout={dataMain.aboutusparagraph}
+        copy={dataMain.copyright}
+        Isti={dataMain.istiparagraph}
+        social={dataMain.titlesocial}
+        insta={dataMain.btninstagram}
+        face={dataMain.btnface}
+        linkedin={dataMain.btnlinkedin}
+        help={dataMain.titlehelp}
+        terms={dataMain.btnterms}
+        privacy={dataMain.btnprivacy}
+        support={dataMain.btnsupport}
+        logo={dataMain.cardlogoimg.url}
+        blog={dataMain.btnblog}
+        faq={dataMain.btnfaq}
       />
     </div>
   )
